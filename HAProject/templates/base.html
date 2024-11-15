@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<!--    <link rel="stylesheet" href="{% static 'css/style.css' %}" />-->
+    <title>{% block title %} Title {% endblock %}</title>
+
+</head>
+<body>
+    <div id="content">
+        {% block content %}
+<!--            <h1>Зимний лес</h1>-->
+<!--            <img src="{% static 'images/forest.jpg' %}" alt="зимний лес" >-->
+        {% endblock %}
+    </div>
+    <div id="sidebar">
+        {% block sidebar %}
+        <h2> Text </h2>
+        <p> Text_text </p>
+        {% endblock %}
+    </div>
+</body>
+</html>

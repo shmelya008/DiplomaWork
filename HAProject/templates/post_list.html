@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    {{ block.super }}
+{% endblock %}
+
+{% block content %}
+    {% for i in posts %}
+        <ul>
+            <li>{{i.title}} | {{i.created}}</li>
+        </ul>
+            {% endfor %}
+{% endblock %}
+
+{% block sidebar %}
+    {{ block.super }}
+{% endblock %}
