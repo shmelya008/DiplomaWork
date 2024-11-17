@@ -1,0 +1,14 @@
+{% extends 'index.html' %}
+
+{% block title %}
+    Posts
+{% endblock %}
+
+{% block content %}
+    <h1>Posts</h1>
+    {% for post in posts %}
+        <h2>
+            <a href=post.title>{{ post.title }}</a>
+        </h2>
+    {% endfor %}
+{% endblock %}
