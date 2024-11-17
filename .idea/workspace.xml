@@ -4,38 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3904134e-95cc-4a1d-8d90-a6d218821682" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/DiplomaWork.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HAProject/HAProject/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HAProject/HAProject/asgi.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HAProject/HAProject/settings.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HAProject/HAProject/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HAProject/HAProject/wsgi.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HAProject/HAStudio/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HAProject/HAStudio/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HAProject/HAStudio/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HAProject/HAStudio/migrations/0001_initial.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HAProject/HAStudio/migrations/0002_alter_post_publish_alter_user_balance_and_more.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HAProject/HAStudio/migrations/0003_alter_post_publish.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HAProject/HAStudio/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HAProject/HAStudio/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HAProject/HAStudio/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HAProject/HAStudio/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HAProject/HAStudio/views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HAProject/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HAProject/db.sqlite3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HAProject/manage.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HAProject/templates/base.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HAProject/templates/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HAProject/templates/post_detail.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HAProject/templates/post_list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HAProject/templates/services.html" afterDir="false" />
+    <list default="true" id="3904134e-95cc-4a1d-8d90-a6d218821682" name="Changes" comment="17.11/19:40">
+      <change afterPath="$PROJECT_DIR$/HAProject/templates/about.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HAProject/templates/contacts.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HAProject/templates/paginator.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HAProject/templates/registration.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HAProject/HAStudio/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/HAProject/HAStudio/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HAProject/HAStudio/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/HAProject/HAStudio/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HAProject/HAStudio/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/HAProject/HAStudio/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HAProject/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/HAProject/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HAProject/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/HAProject/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HAProject/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/HAProject/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HAProject/templates/post_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/HAProject/templates/post_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HAProject/templates/post_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/HAProject/templates/post_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HAProject/templates/services.html" beforeDir="false" afterPath="$PROJECT_DIR$/HAProject/templates/services.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,8 +28,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -62,17 +45,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;Python.settings.executor&quot;: &quot;Run&quot;,
-    &quot;Python.urls.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Sergey/PycharmProjects/DiplomaWork/HAProject/static/images&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "Python.models.executor": "Run",
+    "Python.settings.executor": "Run",
+    "Python.urls.executor": "Run",
+    "Python.views.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/Users/Sergey/PycharmProjects/DiplomaWork/HAProject/static/images",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Sergey\PycharmProjects\DiplomaWork\HAProject\static\images" />
@@ -100,6 +85,30 @@
       <option name="presentableId" value="Default" />
       <updated>1731765617606</updated>
     </task>
+    <task id="LOCAL-00001" summary="17.11/19:40">
+      <option name="closed" value="true" />
+      <created>1731861562736</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1731861562736</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="17.11/19:40" />
+    <option name="LAST_COMMIT_MESSAGE" value="17.11/19:40" />
   </component>
 </project>

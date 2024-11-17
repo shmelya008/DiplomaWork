@@ -1,4 +1,4 @@
-{% extends 'index.html' %}
+{% extends 'base.html' %}
 
 {% block title %}
     Posts
@@ -8,7 +8,8 @@
     <h1>Posts</h1>
     {% for post in posts %}
         <h2>
-            <a href=post.title>{{ post.title }}</a>
+            <a href='{{ post.get_absolute_url }}'>{{ post.title }}</a>
         </h2>
     {% endfor %}
+    {% include 'paginator.html' with page=page_obj %}
 {% endblock %}

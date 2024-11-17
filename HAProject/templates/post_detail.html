@@ -1,10 +1,14 @@
-{% extends 'index.html' %}
-
-{% block title %}
-    Post
-{% endblock %}
-
+{% extends 'base.html' %}
+{% block title %}post{% endblock title %}
+{% block header %}
+    <h5>{{ text_head }}</h5>
+{% endblock header %}
 {% block content %}
-    <h1>Post1</h1>
-    <p>Тестовый файл</p>
-{% endblock %}
+    <div class="container-fluid my-2">
+        <div class="row bg-success text-white mx-2">
+            <div class="col text-center">
+                <div>{{ post }}</div>
+            </div>
+        </div>
+    </div>
+{% endblock content %}

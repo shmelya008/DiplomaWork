@@ -35,8 +35,8 @@ class Post(models.Model):
     objects = models.Manager()
     DoesNotExist = models.Manager
 
-    # def get_absolute_url(self):
-    #     return reverse('HAStudio:post_detail', args=[self.slug])
+    def get_absolute_url(self):
+        return reverse('post_detail', args=[self.slug])
 
     class Meta:
         ordering = ('-publish',)
