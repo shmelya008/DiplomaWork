@@ -4,22 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3904134e-95cc-4a1d-8d90-a6d218821682" name="Changes" comment="17.11/19:40">
-      <change afterPath="$PROJECT_DIR$/HAProject/templates/about.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HAProject/templates/contacts.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HAProject/templates/paginator.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HAProject/templates/registration.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HAProject/HAStudio/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/HAProject/HAStudio/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HAProject/HAStudio/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/HAProject/HAStudio/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HAProject/HAStudio/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/HAProject/HAStudio/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HAProject/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/HAProject/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HAProject/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/HAProject/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HAProject/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/HAProject/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HAProject/templates/post_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/HAProject/templates/post_detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HAProject/templates/post_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/HAProject/templates/post_list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HAProject/templates/services.html" beforeDir="false" afterPath="$PROJECT_DIR$/HAProject/templates/services.html" afterDir="false" />
-    </list>
+    <list default="true" id="3904134e-95cc-4a1d-8d90-a6d218821682" name="Changes" comment="17.11/23:50" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -93,7 +78,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731861562736</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="17.11/23:50">
+      <option name="closed" value="true" />
+      <created>1731876419923</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1731876419923</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -109,6 +102,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="17.11/19:40" />
-    <option name="LAST_COMMIT_MESSAGE" value="17.11/19:40" />
+    <MESSAGE value="17.11/23:50" />
+    <option name="LAST_COMMIT_MESSAGE" value="17.11/23:50" />
   </component>
 </project>
