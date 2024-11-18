@@ -26,6 +26,8 @@ class Post(models.Model):
     title = models.CharField(max_length=250)
     slug = models.SlugField(max_length=250, unique_for_date='publish')
     body = models.TextField()
+    file = models.FileField(upload_to='files', verbose_name='Texts file', null=True, blank=True)
+    image = models.ImageField(upload_to='images', verbose_name='Media file', null=True, blank=True)
     publish = models.DateField(default=timezone.now())
     created = models.DateTimeField(auto_now_add=True)
     updated = models.DateTimeField(auto_now=True)
@@ -34,7 +36,7 @@ class Post(models.Model):
     DoesNotExist = models.Manager
 
     def get_absolute_url(self):
-        return reverse('HAStudio:post_detail', args=[self.slug])
+        return reverse('post_detail', args=[self.slug])
 
     class Meta:
         ordering = ('-publish',)
