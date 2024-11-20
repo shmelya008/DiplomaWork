@@ -18,13 +18,7 @@ def index(request):
 
 def about(request):
     text_head = 'Сведения о компании'
-    name = 'Студия наращивания волос "HairAprel"'
-    service1 = 'Наращивание волос'
-    service2 = 'Окрашивание волос'
-    service3 = 'Стрижка укладка волос'
-    service4 = 'Трихология'
-    context = {'text_head': text_head, 'name': name, 'service1': service1,
-               'service2': service2, 'service3': service3, 'service4': service4}
+    context = {'text_head': text_head}
     return render(request, 'about.html', context)
 
 
@@ -39,7 +33,14 @@ def contacts(request):
 
 
 def services(request):
-    return render(request, 'services.html')
+    name = 'Мы предоставляем следующие услуги:"'
+    service1 = 'Наращивание волос'
+    service2 = 'Окрашивание волос'
+    service3 = 'Стрижка укладка волос'
+    service4 = 'Трихология'
+    context = {'name': name, 'service1': service1,
+               'service2': service2, 'service3': service3, 'service4': service4}
+    return render(request, 'services.html', context)
 
 
 # def login(request):
@@ -66,7 +67,7 @@ def user_login(request):
                 return HttpResponse('Invalid login')
     else:
         form = LoginForm()
-    return render(request, 'account/login.html', {'form': form})
+    return render(request, 'login.html', {'form': form})
 
 
 def logout(request):

@@ -3,7 +3,6 @@ from HAStudio import views
 
 
 urlpatterns = [
-    path('', views.index, name='index'),
     path('login', views.user_login, name='login'),
     path('logout', views.logout, name='logout'),
     path('services', views.services, name='services'),
@@ -11,6 +10,7 @@ urlpatterns = [
     path('about', views.about, name='about'),
     path('posts', views.PostListView.as_view(), name='post_list'),
     path('<slug:slug>', views.PostDetailView.as_view(), name='post_detail'),
+    path('', views.index, name='index'),
 ]
 
 
