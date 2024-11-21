@@ -1,11 +1,11 @@
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, redirect, get_object_or_404
 from django.http import HttpResponse
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from django.views.generic import ListView, DetailView
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth import authenticate, login
-from .forms import LoginForm
-from .models import Post
+from .forms import LoginForm, SignUpForm
+from .models import Post, UserProfile
 
 
 # Create your views here.
@@ -34,7 +34,7 @@ def contacts(request):
 
 def services(request):
     name = 'Мы предоставляем следующие услуги:"'
-    service1 = 'Наращивание волос'
+    service1 = 'наращивание волос. описание услуги'
     service2 = 'Окрашивание волос'
     service3 = 'Стрижка укладка волос'
     service4 = 'Трихология'
@@ -43,6 +43,30 @@ def services(request):
     return render(request, 'services.html', context)
 
 
+def registration(request):
+    if request.method == 'POST':
+        form = SignUpForm(request.POST)
+        if form.is_valid():
+            user = form.save()
+            # сохранение номера
+            UserProfile.objects.create(user=user, phone_number=form.cleaned_data.get('phone_number'),
+                                       requested_service=form.cleaned_data.get('requested_service'))
+            raw_password = form.cleaned_data.get('password1')
+            user = authenticate(username=user.username, password=raw_password)
+            login(request, user)
+            return redirect('service_response')
+    else:
+        form = SignUpForm()
+    return render(request, 'signup.html', {'form': form})
+
+
+def service_response(request):
+    return render(request, 'service_response.html')
+
+
+def reg_auth(request):
+    return render(request, 'reg_auth.html')
+
 # def login(request):
 #     if request.method == 'POST':
 #         form = UserCreationForm(request.POST)
@@ -50,28 +74,28 @@ def services(request):
 #             form.save()
 #     else:
 #         form = UserCreationForm()
+# #     return render(request, 'login.html', {'form': form})
+# def user_login(request):
+#     if request.method == 'POST':
+#         form = LoginForm(request.POST)
+#         if form.is_valid():
+#             cd = form.cleaned_data
+#             user = authenticate(username=cd['username'], password=cd['password'])
+#             if user is not None:
+#                 if user.is_active:
+#                     login(request, user)
+#                     return HttpResponse('Authenticated successfully')
+#                 else:
+#                     return HttpResponse('Disabled account')
+#             else:
+#                 return HttpResponse('Invalid login')
+#     else:
+#         form = LoginForm()
 #     return render(request, 'login.html', {'form': form})
-def user_login(request):
-    if request.method == 'POST':
-        form = LoginForm(request.POST)
-        if form.is_valid():
-            cd = form.cleaned_data
-            user = authenticate(username=cd['username'], password=cd['password'])
-            if user is not None:
-                if user.is_active:
-                    login(request, user)
-                    return HttpResponse('Authenticated successfully')
-                else:
-                    return HttpResponse('Disabled account')
-            else:
-                return HttpResponse('Invalid login')
-    else:
-        form = LoginForm()
-    return render(request, 'login.html', {'form': form})
 
 
-def logout(request):
-    return render(request, 'logout.html')
+# def logout(request):
+#     return render(request, 'logout.html')
 
 
 class PostListView(ListView):

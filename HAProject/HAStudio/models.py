@@ -1,21 +1,31 @@
 from django.db import models
 from django.utils import timezone
 from django.urls import reverse
-
+from django.contrib.auth.models import User
 
 # Create your models here.
 
-class User(models.Model):
-    name = models.CharField(max_length=120, null=False)
-    phone_number = models.CharField(max_length=11, null=False)
-    email = models.EmailField()
-    required_service = models.CharField(max_length=20, null=False)
-    balance = models.DecimalField(max_digits=10, decimal_places=2, null=True)
+# class User(models.Model):
+#     name = models.CharField(max_length=120, null=False)
+#     phone_number = models.CharField(max_length=15, null=False)
+#     email = models.EmailField()
+#     required_service = models.CharField(max_length=20, null=False)
+#     balance = models.DecimalField(max_digits=10, decimal_places=2, null=True, blank=True)
+#     objects = models.Manager()
+#     DoesNotExist = models.Manager
+#
+#     def __str__(self):
+#         return self.name
+
+
+class UserProfile(models.Model):
+    user = models.OneToOneField(User, on_delete=models.CASCADE)
+    phone_number = models.CharField(max_length=15)
+    birth_date = models.DateField(null=True, blank=True)
+    requested_service = models.CharField(max_length=20, null=False)
+    balance = models.DecimalField(max_digits=10, decimal_places=2, null=True, blank=True)
     objects = models.Manager()
     DoesNotExist = models.Manager
-
-    def __str__(self):
-        return self.name
 
 
 class Post(models.Model):

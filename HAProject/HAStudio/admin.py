@@ -1,14 +1,12 @@
 from django.contrib import admin
-from .models import User, Post
+from .models import Post, UserProfile
 
 # Register your models here.
 
 
-@admin.register(User)
-class UserAdmin(admin.ModelAdmin):
-    list_display = ('name', 'phone_number', 'email', 'required_service', 'balance')
-    list_filter = ('required_service',)
-    search_fields = ('name',)
+@admin.register(UserProfile)
+class ProfileAdmin(admin.ModelAdmin):
+    list_display = ('user', 'phone_number', 'birth_date', 'requested_service', 'balance')
 
 
 @admin.register(Post)

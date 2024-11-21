@@ -3,8 +3,9 @@ from HAStudio import views
 
 
 urlpatterns = [
-    path('login', views.user_login, name='login'),
-    path('logout', views.logout, name='logout'),
+    path('reg_auth', views.reg_auth, name='reg_auth'),
+    path('service_response', views.service_response, name='service_response'),
+    path('user/registration', views.registration, name='registration'),
     path('services', views.services, name='services'),
     path('contacts', views.contacts, name='contacts'),
     path('about', views.about, name='about'),

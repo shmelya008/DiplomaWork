@@ -1,13 +1,70 @@
 {% extends 'base.html' %}
+{% load static %}
 
 {% block content %}
     <div class="container text-start">
-        <h3>{{ name }}</h3>
-        <ul>
-            <li><p>{{ service1 }}</p></li>
-            <li><p>{{ service2 }}</p></li>
-            <li><p>{{ service3 }}</p></li>
-            <li><p>{{ service4 }}</p></li>
-        </ul>
+        <div class="row text-start">
+            <h3>{{ name }}</h3>
+        </div>
+        <div class="row"><p>---------------------</p></div>
+        <div class="row text-start">
+            <div class="col-3 text-start">
+                <img src=" {% static 'images/logo.jpg' %} " width="150" height="100">
+            </div>
+            <div class="col-6 text-start">
+                <p>{{ service1 | title }}</p>
+            </div>
+            <div class="col-3 text-start">
+                <a class="nav-link" href="{% url 'reg_auth' %}">
+                    <button type="submit">Записаться на услугу</button>
+                </a>
+                <p>(только для зарегистрированных пользователей)</p>
+            </div>
+        <div class="row"><p>---------------------</p></div>
+        </div>
+                <div class="row text-start">
+            <div class="col-3 text-start">
+                <img src=" {% static 'images/logo.jpg' %} " width="150" height="100">
+            </div>
+            <div class="col-6 text-start">
+                <p>{{ service2 | title }}</p>
+            </div>
+            <div class="col-3 text-start">
+                <a class="nav-link" href="{% url 'reg_auth' %}">
+                    <button type="submit">Записаться на услугу</button>
+                </a>
+                <p>(только для зарегистрированных пользователей)</p>
+            </div>
+        <div class="row"><p>---------------------</p></div>
+        </div>
+                <div class="row text-start">
+            <div class="col-3 text-start">
+                <img src=" {% static 'images/logo.jpg' %} " width="150" height="100">
+            </div>
+            <div class="col-6 text-start">
+                <p>{{ service3 | title }}</p>
+            </div>
+            <div class="col-3 text-start">
+                <a class="nav-link" href="{% url 'reg_auth' %}">
+                    <button type="submit">Записаться на услугу</button>
+                </a>
+                <p>(только для зарегистрированных пользователей)</p>
+            </div>
+        <div class="row"><p>---------------------</p></div>
+        </div>
+                <div class="row text-start">
+            <div class="col-3 text-start">
+                <img src=" {% static 'images/logo.jpg' %} " width="150" height="100">
+            </div>
+            <div class="col-6 text-start">
+                <p>{{ service4 | title }}</p>
+            </div>
+            <div class="col-3 text-start">
+                <a class="nav-link" href="{% url 'reg_auth' %}">
+                    <button type="submit">Записаться на услугу</button>
+                </a>
+                <p>(только для зарегистрированных пользователей)</p>
+            </div>
+        </div>
     </div>
 {% endblock content %}

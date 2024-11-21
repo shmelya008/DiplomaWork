@@ -11,10 +11,15 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 """
 import os
 from pathlib import Path
+import sys
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
+# Include BOOTSTRAP5_FOLDER in path
+BOOTSTRAP5_FOLDER = os.path.abspath(os.path.join(BASE_DIR, "..", "django_bootstrap5"))
+if BOOTSTRAP5_FOLDER not in sys.path:
+    sys.path.insert(0, BOOTSTRAP5_FOLDER)
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/
@@ -38,6 +43,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django_bootstrap5'
     # 'django-cleanup',
 ]
 
@@ -137,4 +143,12 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-LOGIN_REDIRECT_URL = '/'
+LOGOUT_REDIRECT_URL = '/'
+LOGIN_REDIRECT_URL = 'service_response'
+
+# Settings for django-bootstrap5
+BOOTSTRAP5 = {
+    "error_css_class": "django_bootstrap5-error",
+    "required_css_class": "django_bootstrap5-required",
+    "javascript_in_head": True,
+}

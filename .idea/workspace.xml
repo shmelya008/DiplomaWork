@@ -4,23 +4,69 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="10c95896-f0fe-4aa7-a1ec-de90dc3697f9" name="Changes" comment="19.11 / 22:00">
+    <list default="true" id="10c95896-f0fe-4aa7-a1ec-de90dc3697f9" name="Changes" comment="20.11 / 16:30">
+      <change afterPath="$PROJECT_DIR$/HAProject/templates/hastudio/service_response.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HAProject/templates/registration/reg_auth.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HAProject/templates/registration/signup.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HAProject/HAProject/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/HAProject/HAProject/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HAProject/HAProject/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/HAProject/HAProject/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HAProject/HAStudio/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/HAProject/HAStudio/admin.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HAProject/HAStudio/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/HAProject/HAStudio/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HAProject/HAStudio/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/HAProject/HAStudio/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HAProject/HAStudio/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/HAProject/HAStudio/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HAProject/HAStudio/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/HAProject/HAStudio/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HAProject/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/HAProject/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HAProject/templates/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/HAProject/templates/hastudio/about.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HAProject/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/HAProject/templates/hastudio/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HAProject/templates/contacts.html" beforeDir="false" afterPath="$PROJECT_DIR$/HAProject/templates/hastudio/contacts.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HAProject/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/HAProject/templates/hastudio/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HAProject/templates/paginator.html" beforeDir="false" afterPath="$PROJECT_DIR$/HAProject/templates/hastudio/paginator.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HAProject/templates/post_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/HAProject/templates/hastudio/post_detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HAProject/templates/post_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/HAProject/templates/hastudio/post_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HAProject/static/css/bootstrap-grid.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HAProject/static/css/bootstrap-grid.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HAProject/static/css/bootstrap-grid.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HAProject/static/css/bootstrap-grid.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HAProject/static/css/bootstrap-grid.rtl.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HAProject/static/css/bootstrap-grid.rtl.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HAProject/static/css/bootstrap-grid.rtl.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HAProject/static/css/bootstrap-grid.rtl.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HAProject/static/css/bootstrap-reboot.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HAProject/static/css/bootstrap-reboot.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HAProject/static/css/bootstrap-reboot.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HAProject/static/css/bootstrap-reboot.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HAProject/static/css/bootstrap-reboot.rtl.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HAProject/static/css/bootstrap-reboot.rtl.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HAProject/static/css/bootstrap-reboot.rtl.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HAProject/static/css/bootstrap-reboot.rtl.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HAProject/static/css/bootstrap-utilities.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HAProject/static/css/bootstrap-utilities.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HAProject/static/css/bootstrap-utilities.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HAProject/static/css/bootstrap-utilities.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HAProject/static/css/bootstrap-utilities.rtl.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HAProject/static/css/bootstrap-utilities.rtl.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HAProject/static/css/bootstrap-utilities.rtl.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HAProject/static/css/bootstrap-utilities.rtl.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HAProject/static/css/bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HAProject/static/css/bootstrap.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HAProject/static/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HAProject/static/css/bootstrap.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HAProject/static/css/bootstrap.rtl.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HAProject/static/css/bootstrap.rtl.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HAProject/static/css/bootstrap.rtl.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HAProject/static/css/bootstrap.rtl.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HAProject/static/js/bootstrap.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HAProject/static/js/bootstrap.bundle.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HAProject/static/js/bootstrap.bundle.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HAProject/static/js/bootstrap.bundle.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HAProject/static/js/bootstrap.esm.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HAProject/static/js/bootstrap.esm.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HAProject/static/js/bootstrap.esm.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HAProject/static/js/bootstrap.esm.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HAProject/static/js/bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HAProject/static/js/bootstrap.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HAProject/static/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HAProject/static/js/bootstrap.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HAProject/templates/hastudio/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/HAProject/templates/hastudio/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HAProject/templates/hastudio/services.html" beforeDir="false" afterPath="$PROJECT_DIR$/HAProject/templates/hastudio/services.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HAProject/templates/registration/logged_out.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/HAProject/templates/registration/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/HAProject/templates/registration/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HAProject/templates/services.html" beforeDir="false" afterPath="$PROJECT_DIR$/HAProject/templates/hastudio/services.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HAProject/templates/registration/logindraft.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HAProject/templates/registration/logout.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,31 +96,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;Python.admin.executor&quot;: &quot;Run&quot;,
-    &quot;Python.models.executor&quot;: &quot;Run&quot;,
-    &quot;Python.settings.executor&quot;: &quot;Run&quot;,
-    &quot;Python.urls.executor&quot;: &quot;Run&quot;,
-    &quot;Python.views.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/user/PycharmProjects/DiplomaWork/HAProject/templates/registration&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "Python.admin.executor": "Run",
+    "Python.forms.executor": "Run",
+    "Python.models.executor": "Run",
+    "Python.settings.executor": "Run",
+    "Python.urls.executor": "Run",
+    "Python.views.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/Users/user/PycharmProjects/DiplomaWork/HAProject/templates/registration",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\user\PycharmProjects\DiplomaWork\HAProject\templates\registration" />
       <recent name="C:\Users\user\PycharmProjects\DiplomaWork\HAProject\HAStudio\static\images" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\user\PycharmProjects\DiplomaWork\HAProject\templates\hastudio" />
-      <recent name="C:\Users\user\PycharmProjects\DiplomaWork\HAProject\templates" />
       <recent name="C:\Users\user\PycharmProjects\DiplomaWork\HAProject\templates\registration" />
+      <recent name="C:\Users\user\PycharmProjects\DiplomaWork\HAProject\templates\django_registration" />
+      <recent name="C:\Users\user\PycharmProjects\DiplomaWork\HAProject\templates" />
+      <recent name="C:\Users\user\PycharmProjects\DiplomaWork\HAProject\templates\hastudio" />
       <recent name="C:\Users\user\PycharmProjects\DiplomaWork\HAProject\templates\HAStudio" />
-      <recent name="C:\Users\user\PycharmProjects\DiplomaWork" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -125,7 +172,15 @@
       <option name="project" value="LOCAL" />
       <updated>1732042852459</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="20.11 / 16:30">
+      <option name="closed" value="true" />
+      <created>1732109641257</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1732109641257</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -143,6 +198,7 @@
     <MESSAGE value="15.11/20:48" />
     <MESSAGE value="18.11/18:40" />
     <MESSAGE value="19.11 / 22:00" />
-    <option name="LAST_COMMIT_MESSAGE" value="19.11 / 22:00" />
+    <MESSAGE value="20.11 / 16:30" />
+    <option name="LAST_COMMIT_MESSAGE" value="20.11 / 16:30" />
   </component>
 </project>
