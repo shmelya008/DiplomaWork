@@ -6,6 +6,7 @@ from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth import authenticate, login
 from .forms import LoginForm, SignUpForm
 from .models import Post, UserProfile
+from django.contrib.auth.models import User
 
 
 # Create your views here.
@@ -33,12 +34,13 @@ def contacts(request):
 
 
 def services(request):
+    user = User()
     name = 'Мы предоставляем следующие услуги:"'
     service1 = 'наращивание волос. описание услуги'
     service2 = 'Окрашивание волос'
     service3 = 'Стрижка укладка волос'
     service4 = 'Трихология'
-    context = {'name': name, 'service1': service1,
+    context = {'user': user, 'name': name, 'service1': service1,
                'service2': service2, 'service3': service3, 'service4': service4}
     return render(request, 'services.html', context)
 
@@ -66,36 +68,6 @@ def service_response(request):
 
 def reg_auth(request):
     return render(request, 'reg_auth.html')
-
-# def login(request):
-#     if request.method == 'POST':
-#         form = UserCreationForm(request.POST)
-#         if form.is_valid():
-#             form.save()
-#     else:
-#         form = UserCreationForm()
-# #     return render(request, 'login.html', {'form': form})
-# def user_login(request):
-#     if request.method == 'POST':
-#         form = LoginForm(request.POST)
-#         if form.is_valid():
-#             cd = form.cleaned_data
-#             user = authenticate(username=cd['username'], password=cd['password'])
-#             if user is not None:
-#                 if user.is_active:
-#                     login(request, user)
-#                     return HttpResponse('Authenticated successfully')
-#                 else:
-#                     return HttpResponse('Disabled account')
-#             else:
-#                 return HttpResponse('Invalid login')
-#     else:
-#         form = LoginForm()
-#     return render(request, 'login.html', {'form': form})
-
-
-# def logout(request):
-#     return render(request, 'logout.html')
 
 
 class PostListView(ListView):

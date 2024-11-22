@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+
 {% load static %}
 
 {% block content %}
@@ -15,10 +16,17 @@
                 <p>{{ service1 | title }}</p>
             </div>
             <div class="col-3 text-start">
-                <a class="nav-link" href="{% url 'reg_auth' %}">
-                    <button type="submit">Записаться на услугу</button>
-                </a>
-                <p>(только для зарегистрированных пользователей)</p>
+                {% if request.user.is_authenticated %}
+                    <a class="nav-link" href="{% url 'service_response' %}">
+                        <button type="submit">Записаться на услугу</button>
+                    </a>
+                    <p>(только для зарегистрированных пользователей)</p>
+                {% else %}
+                    <a class="nav-link" href="{% url 'reg_auth' %}">
+                        <button type="submit">Записаться на услугу</button>
+                    </a>
+                    <p>(только для зарегистрированных пользователей)</p>
+                {% endif %}>
             </div>
         <div class="row"><p>---------------------</p></div>
         </div>
@@ -30,10 +38,17 @@
                 <p>{{ service2 | title }}</p>
             </div>
             <div class="col-3 text-start">
-                <a class="nav-link" href="{% url 'reg_auth' %}">
-                    <button type="submit">Записаться на услугу</button>
-                </a>
-                <p>(только для зарегистрированных пользователей)</p>
+                {% if request.user.is_authenticated %}
+                    <a class="nav-link" href="{% url 'service_response' %}">
+                        <button type="submit">Записаться на услугу</button>
+                    </a>
+                    <p>(только для зарегистрированных пользователей)</p>
+                {% else %}
+                    <a class="nav-link" href="{% url 'reg_auth' %}">
+                        <button type="submit">Записаться на услугу</button>
+                    </a>
+                    <p>(только для зарегистрированных пользователей)</p>
+                {% endif %}
             </div>
         <div class="row"><p>---------------------</p></div>
         </div>
@@ -45,10 +60,17 @@
                 <p>{{ service3 | title }}</p>
             </div>
             <div class="col-3 text-start">
-                <a class="nav-link" href="{% url 'reg_auth' %}">
-                    <button type="submit">Записаться на услугу</button>
-                </a>
-                <p>(только для зарегистрированных пользователей)</p>
+                {% if request.user.is_authenticated %}
+                    <a class="nav-link" href="{% url 'service_response' %}">
+                        <button type="submit">Записаться на услугу</button>
+                    </a>
+                    <p>(только для зарегистрированных пользователей)</p>
+                {% else %}
+                    <a class="nav-link" href="{% url 'reg_auth' %}">
+                        <button type="submit">Записаться на услугу</button>
+                    </a>
+                    <p>(только для зарегистрированных пользователей)</p>
+                {% endif %}
             </div>
         <div class="row"><p>---------------------</p></div>
         </div>
@@ -60,10 +82,17 @@
                 <p>{{ service4 | title }}</p>
             </div>
             <div class="col-3 text-start">
-                <a class="nav-link" href="{% url 'reg_auth' %}">
-                    <button type="submit">Записаться на услугу</button>
-                </a>
-                <p>(только для зарегистрированных пользователей)</p>
+                {% if request.user.is_authenticated %}
+                    <a class="nav-link" href="{% url 'service_response' %}">
+                        <button type="submit">Записаться на услугу</button>
+                    </a>
+                    <p>(только для зарегистрированных пользователей)</p>
+                {% else %}
+                    <a class="nav-link" href="{% url 'reg_auth' %}">
+                        <button type="submit">Записаться на услугу</button>
+                    </a>
+                    <p>(только для зарегистрированных пользователей)</p>
+                {% endif %}
             </div>
         </div>
     </div>
